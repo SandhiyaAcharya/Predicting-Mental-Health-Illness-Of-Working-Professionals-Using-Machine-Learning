@@ -1,0 +1,66 @@
+body {
+     background-image: url('/static/images/index.png');
+     margin-left: 110px;
+     background-size: cover;
+    
+ }
+ .predict{
+     background-color: #db6997;
+     color: white;
+     padding: 6px 20px;
+     border: none;
+     border-radius: 15px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     font-size: 18px;
+ }
+ input{
+     color: #705892;
+     padding: 6px 10px;
+     border: none;
+     border-radius: 5px;
+     font-size: 14px;
+     outline: none;
+     width: 100px;
+     background-color: #daf2f2;
+ }
+ h1{
+     color: #2B6058;
+     font-family: Arial, sans-serif;
+     font-weight: bold;
+     font-size: 64px;
+     padding-top: 0;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+ label{
+     font-family: Arial, sans-serif;
+     font-weight: 550;
+     color: #705892;
+     font-size: 16px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     margin: 0;
+     width: 30%;
+   }
+ select{
+     border: none;
+     font-size: 16px;
+     border-radius: 5px;
+     background: #daf2f2;
+     color: #705892;
+     padding: 4px 8px;
+     width: 100%;
+     max-width: 100px;
+ }
+ .main-div{
+     display: flex;
+  flex-direction: row;
+  width: 60%;
+ }
+ .subdiv{
+     width: 50%;
+ }
+ .form-inputs{
+     width: 100%;
+ }
