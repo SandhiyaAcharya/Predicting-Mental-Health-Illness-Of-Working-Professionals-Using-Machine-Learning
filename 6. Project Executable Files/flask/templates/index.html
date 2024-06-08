@@ -10,155 +10,158 @@
     <h1>Mental Health Prediction</h1>
     <form action="/out" method="post">
         <div class="main-div">
-            <div class="subdiv">
-            
-        
+            <div class="subdiv">            
         <div class="form-inputs"><label for="age">Age:</label>
         <input type="text" id="age" name="age" required><br><br></div> 
 
         <div class="form-inputs"><label for="gender">Gender:</label>
         <select id="gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
+            <option value=0>Male</option>
+            <option value=1>Female</option>
+            <option value=2>Other</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="self_employed">Self Employed:</label>
         <select id="self_employed" name="self_employed" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="family_history">Family History:</label>
         <select id="family_history" name="family_history" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="work_interfere">Work Interference:</label>
         <select id="work_interfere" name="work_interfere" required>
-            <option value="often">Often</option>
-            <option value="sometimes">Sometimes</option>
-            <option value="rarely">Rarely</option>
-            <option value="never">Never</option>
+            <option value=0>Often</option>
+            <option value=1>Sometimes</option>
+            <option value=2>Rarely</option>
+            <option value=3>Never</option>
         </select><br><br></div> 
-
 
         <div class="form-inputs"><label for="no_employees">Number of Employees:</label>
         <select id="no_employees" name="no_employees" required>
-            <option value="6-25">6-25</option>
-            <option value="26-100">26-100</option>
-            <option value="More than 1000">More than 1000</option>
-            <option value="100-500">100-500</option>
-            <option value="1-5">1-5</option>
-            <option value="500-1000">500-1000</option>
+            <option value=0>6-25</option>
+            <option value=1>26-100</option>
+            <option value=2>More than 1000</option>
+            <option value=3>100-500</option>
+            <option value=4>1-5</option>
+            <option value=5>500-1000</option>
         </select><br><br></div> 
-
-        
 
         <div class="form-inputs"><label for="remote_work">Remote Work:</label>
         <select id="remote_work" name="remote_work" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="tech_company">Tech Company:</label>
         <select id="tech_company" name="tech_company" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="benefits">Benefits:</label>
         <select id="benefits" name="benefits" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="dont_know">Don't Know</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Don't Know</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="care_options">Care Options:</label>
         <select id="care_options" name="care_options" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="not_sure">Not Sure</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Not Sure</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="wellness_program">Wellness Program:</label>
         <select id="wellness_program" name="wellness_program" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="dont_know">Don't Know</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Don't Know</option>
         </select><br><br></div> 
     </div>
     <div class="subdiv">
         <div class="form-inputs"><label for="seek_help">Seek Help:</label>
         <select id="seek_help" name="seek_help" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="dont_know">Don't Know</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Don't Know</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="anonymity">Anonymity:</label>
         <select id="anonymity" name="anonymity" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="dont_know">Don't Know</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Don't Know</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="leave">Leave:</label>
         <select id="leave" name="leave" required>
-            <option value="very_easy">Very Easy</option>
-            <option value="somewhat_easy">Somewhat Easy</option>
-            <option value="somewhat_difficult">Somewhat Difficult</option>
-            <option value="very_difficult">Very Difficult</option>
-            <option value="dont_know">Don't Know</option>
+            <option value=0>Very Easy</option>
+            <option value=1>Somewhat Easy</option>
+            <option value=2>Somewhat Difficult</option>
+            <option value=3>Very Difficult</option>
+            <option value=4>Don't Know</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="mental_health_consequence">Mental Health Consequence:</label>
         <select id="mental_health_consequence" name="mental_health_consequence" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="maybe">Maybe</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Maybe</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="phys_health_consequence">Physical Health Consequence:</label>
         <select id="phys_health_consequence" name="phys_health_consequence" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="maybe">Maybe</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Maybe</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="coworkers">Coworkers:</label>
         <select id="coworkers" name="coworkers" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="some_of_them">Some of Them</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Some of Them</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="supervisor">Supervisor:</label>
         <select id="supervisor" name="supervisor" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="some_of_them">Some of Them</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Some of Them</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="mental_health_interview">Mental Health Interview:</label>
         <select id="mental_health_interview" name="mental_health_interview" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="maybe">Maybe</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Maybe</option>
         </select><br><br></div> 
 
         <div class="form-inputs"><label for="phys_health_interview">Physical Health Interview:</label>
         <select id="phys_health_interview" name="phys_health_interview" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="maybe">Maybe</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
+            <option value=2>Maybe</option>
         </select><br><br></div> 
+
+        <div class="form-inputs"><label for="mental_vs_physical">Mental vs Physical:</label>
+            <select id="mental_vs_physical" name="mental_vs_physical" required>
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+                <option value=2>Maybe</option>
+            </select><br><br></div> 
 
         <div class="form-inputs"><label for="obs_consequence">Observed Consequence:</label>
         <select id="obs_consequence" name="obs_consequence" required>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value=2>Don't know</option>
+            <option value=1>Yes</option>
+            <option value=0>No</option>
         </select><br><br></div> 
         
     </div>
